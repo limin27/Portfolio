@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">TAN LI MIN</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">TAN LI MIN</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/limin.jpeg" alt="LI MIN profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">TAN LI MIN</h1>
+        <p class="section__text__p2">FINAL YEAR STUDENT AT UNIVERSITY MALAYSIA PAHANG AL-SULTAN ABDULLAH (UMPSA)</p>
+        <p>Focused and dedicated computer science student with a strong foundation in game development, programming, 
+          and web development. Seeking an internship position to apply and expand my skills in UI UX designer, web or software development.</p>
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/tan-li-min-9a1666270/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/limin27'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/limin.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <p>
+                <span class="card-title"><a href="https://www.umpsa.edu.my/en" target="_blank" class="teal-text hoverline">University Malaysia Pahang al-Sultan Abdullah</a></span>
+              </p>
+              <p class="brown-text">Pekan, Pahang.</p>
+              <p>
+                <b>Degree: </b>Bachelor of Computer Science (Technology in Graphic and Multimedia) with Honors      
+                <br>
+                <b>Curent CGPA: </b>3.53/4.0
+              </p>
+
+              <ul>
+                <p>
+                  <b>Relevant Courseworks:</b>
+                <ul>
+                  <li>Object-Oriented Programming</li>
+                  <li>Problem Solving</li>
+                  <li>Mobile Development</li> 
+                  <li>Software and Web Engineering</li>
+                  <li>Game Development</li>  
+                </ul>
+                </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <p>
+                <span class="card-title"><a href="https://www.facebook.com/p/SMK-Dato-Jaafar-Johor-Bahru-Rasmi-100063971978404/?locale=ms_MY" target="_blank" class="teal-text hoverline">Dato' Jaafar High School</a></span>
+              </p>
+              <p class="brown-text">Tempe, USA</p>
+              <p>
+                <b>Certificate: </b>The Malaysian Higher School Certificate (STPM)      
+                <br>
+                <b>CGPA: </b>3.05/4.0
+              </p>
+
+              
+            </div>
+            
+          </div>
+          <div class="text-container">
+            <p>
+              With a solid foundation in software development and a passion for user-centered design, I aim to create seamless digital experiences and efficient software solutions.
+
+              In the realm of design, I have a keen interest in UI/UX principles and user-centric development. My projects, such as the Kiosk Management System built with PHP and My Pet App, a Java-based mobile app, involved designing intuitive interfaces to enhance user engagement and accessibility. My Masuri's Curse Adventure game project demonstrates my ability to blend engaging visuals with interactive experiences.
+
+              On the technical side, I have experience with languages such as C#, Java, JavaScript, Python, and frameworks like Android Studio, Bootstrap, and Laravel (currently learning). My academic and project experiences have honed my ability to integrate design and functionality to deliver complete software solutions.
+
+              I am seeking opportunities as a UI/UX Designer Intern or Software Intern, where I can contribute to developing impactful designs and applications while further refining my skills in software development and user experience design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages and Databases</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/html5-300x300.jpg" class="responsive-img" />HTML5
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/css3-300x300.jpg" class="responsive-img" />CSS3
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/C_Sharp_Logo.png" class="responsive-img" />C#
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/PHP-logo.png" class="responsive-img" />PHP
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/python-logo-1-300x300.jpg" class="responsive-img" />Python
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Frameworks</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/bootstrap.png" class="responsive-img" />Bootstrap
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/Laravel.png" class="responsive-img" />Laravel
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+
+
+              <div class="col s4 m2">
+                <img alt="" src="/assets/unity.png" class="responsive-img" />Unity
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/android studio.jpg" class="responsive-img" />Android Studio
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/figma.png" class="responsive-img" />Figma
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/Adobe_Photoshop_CC.png" class="responsive-img" />Adobe Photoshop
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="project-container">
+        <div class="project-box">
+          <a href="https://github.com/limin27/Fakulti-Komputeran-Food-Kiosk-Management-System-Kiosk-" class="project-container" target="_blank">
+            <img src="/assets/KIOSK SYSTEM.png" alt="Project Image" class="project-image">
+            <div class="project-overlay">
+                <h2 class="project-title">KIOSK SYSTEM</h2>
+            </div>
+            <div class="icon-container">
+                <span class="iconify" data-icon="bx:link"></span>
+            </div>
+          </a>
+        </div>
+        <div class="project-box">
+          <a href="https://github.com/limin27/MyPet-APP" class="project-container" target="_blank">
+            <img src="/assets/PET.png" alt="Project Image" class="project-image">
+            <div class="project-overlay">
+                <h2 class="project-title">MY PET APPLICATION</h2>
+            </div>
+            <div class="icon-container">
+                <span class="iconify" data-icon="bx:link"></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-box">
+          <a href="https://example.com" class="project-container" target="_blank">
+            <img src="/assets/VR.png" alt="Project Image" class="project-image">
+            <div class="project-overlay">
+                <h2 class="project-title"> VR CULINARY ART COURSES</h2>
+            </div>
+            <div class="icon-container">
+                <span class="iconify" data-icon="bx:link"></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-box">
+          <a href="https://github.com/limin27/AR-Baculoviridae-Family" class="project-container" target="_blank">
+            <img src="/assets/AR.png" alt="Project Image" class="project-image">
+            <div class="project-overlay">
+                <h2 class="project-title"> AR Baculoviridae Family</h2>
+            </div>
+            <!-- Icon Container with Iconify Icon -->
+            <div class="icon-container">
+                <span class="iconify" data-icon="bx:link"></span>
+            </div>
+          </a>
+        </div>
+        
+      </div>  
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:limin.tan12@gmail.com">limin.tan12@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/tan-li-min-9a1666270/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 TAN LI MIN. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  </body>
+</html>
