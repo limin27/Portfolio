@@ -164,6 +164,10 @@ section {
   margin-bottom: Zpx;
 }
 
+.section-wrapper {
+  margin-bottom: 5rem; /* Add consistent spacing between sections */
+}
+
 /* PROFILE SECTION */
 
 #profile {
@@ -171,6 +175,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  margin-bottom: 4rem;
 }
 
 .section__pic-container {
