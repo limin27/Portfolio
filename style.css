@@ -152,11 +152,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  padding: 2rem 1rem;
   box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section-container {
@@ -165,7 +162,11 @@ section {
 }
 
 .section-wrapper {
-  margin-bottom: 5rem; /* Add consistent spacing between sections */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
 /* PROFILE SECTION */
@@ -174,7 +175,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: auto;
   margin-bottom: 4rem;
 }
 
@@ -201,6 +202,7 @@ section {
 .section__text__p2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  
 }
 
 .title {
@@ -213,6 +215,7 @@ section {
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 /* ICONS */
@@ -274,23 +277,26 @@ section {
 /* ABOUT SECTION */
 
 #about {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
+
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
   display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-details-container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .about-pic {
@@ -323,6 +329,16 @@ section {
   width: 400px;
   margin: auto 0;
 }
+
+.text-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: justify;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
 
 /* SKILLS SECTION */
 .container {
